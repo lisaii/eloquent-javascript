@@ -1,0 +1,11 @@
+{
+  "name": "eloquent-javascript",
+  "version": "0.0.1",
+  "author": "lisai",
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {
+    "jest-cli": "^16.0.2"
+  }
+}
