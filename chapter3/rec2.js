@@ -1,5 +1,5 @@
 function power(base, exponent) {
-    var result=1;
+    var result = 1;
     if (exponent == 0) {
         return result;
     }
@@ -10,4 +10,4 @@ function power(base, exponent) {
 }
 
 
-console.log(power(2,3))
+console.log(power(2, 3))
