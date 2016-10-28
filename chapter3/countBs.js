@@ -7,4 +7,6 @@ function countBs(str, symbol) {
     }
     return countOfB
 }
-console.log(countBs('rnfdnbdf#3##33#dbdb', '#'));
+console.log(countBs('rnfdnbdf#3##33#dbd`    b', '#'));
+
+module.exports = countBs;

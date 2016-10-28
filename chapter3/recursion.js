@@ -2,9 +2,10 @@ function f(x) {
     if (x < 15) {
         f(x * 2)
     }
-    console.log(x)
+    return x;
 
 }
 
 
-f(1)
+console.log(f(1));
+
