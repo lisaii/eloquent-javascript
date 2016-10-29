@@ -1,5 +1,5 @@
 function countNumbers(x) {
-    var e = 0;
+    const e = 0;
     if (x > 0 && x <= 7) {
         e = x * x - 2;
     }
@@ -11,4 +11,6 @@ function countNumbers(x) {
     }
     return e;
 }
-console.log(countNumbers(5))
+console.log(countNumbers(5));
+
+module.exports = countNumbers;
