@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    padding: 10px 10% 10px 10%;
+}
+
+.site-header {
+    display: flex;
+    background: #0040ff;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    border: 4px #4d79ff solid;
+    margin: 10px 0% 10px 0%;
+}
+
+.card-name {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 24px;
+}
+
+.main-tile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.tile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 53px;
+    width: 13%;
+    background: #0040ff;
+    color: azure;
+}
+
+.special-offer-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0040ff;
+    margin: 10px 0% 10px 0%;
+    color: white;
+    height: 25px;
+}
+
+.content-creator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0040ff;
+    color: white;
+    height: 53px;
+    border: 4px #4d79ff solid;
+}
+
+.zone-for-creation {
+    background: #0040ff;
+    height: 400px;
+    width: 90%;
+    margin: 0 5% 0 5%;
+    border: 4px #4d79ff solid;
+    border-top: none;
+}
