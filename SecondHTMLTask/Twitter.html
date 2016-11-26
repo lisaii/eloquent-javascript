@@ -1,28 +1,32 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="twitterApp">
 <head>
+
+
+
+
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/lodash/4.17.2/lodash.min.js"></script>
     <script src="app.js"></script>
     <title>Twitter</title>
 </head>
 <body ng-controller="suggestionsController">
+
 <div class="main-module">
     <div class="site-header">
         <div class="field field1">Кого читать ∙</div>
-        <div class="field field2" ng-click="refreshUsers()">Обновить ∙</div>
+        <div class="field field2" ng-click="increment()">Обновить ∙</div>
         <div class="field field3">Все</div>
     </div>
     <div class="main-field-content">
-        <div class="recommendation" ng-repeat="user in suggestionUsers track by $index">
-            <i class="fa fa-times close-button" aria-hidden="true" ng-click="refreshUsers($index)"></i>
-            <div class="photo-of-user" ng-style="{'background-image': 'url(' + suggestionUsers[$index].avatar_url + ')'}"></div>
+        <div class="recommendation" ng-repeat="user in suggestionUsers">
+            <i class="fa fa-times close-button" aria-hidden="true"></i>
+            <div class="photo-of-user" ng-style="{'background-image': 'url(' + user.avatar_url + ')'}"></div>
             <div class="field-of-user">
-                <div class="name-of-user">{{suggestionUsers[$index].login}}</div>
-                <div class="link-to-user">{{suggestionUsers[$index].html_url}}</div>
+                <div class="name-of-user">{{user.login}}</div>
+                <div class="link-to-user">{{user.html_url}}</div>
                 <a href="#" class="button"><i class="fa fa-user-plus add-user-icon" aria-hidden="true"></i>Читать</a>
             </div>
         </div>
@@ -32,6 +36,7 @@
     <div class="find-friends"><i class="fa fa-id-badge find-friends-icon" aria-hidden="true"></i> Найдите знакомых</div>
 </div>
 <p>Total number of users: {{suggestionUsers.length}}</p>
+value: {{value}}
 </body>
 </html>
 
