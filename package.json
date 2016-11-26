@@ -7,5 +7,10 @@
   },
   "dependencies": {
     "jest-cli": "^16.0.2"
+  },
+  "devDependencies": {
+    "node-sass": "^3.13.0",
+    "sass-loader": "^4.0.2",
+    "webpack": "^1.13.3"
   }
 }

@@ -38,3 +38,6 @@ jspm_packages
 
 .idea/*
 *.iml
+/*/bower_components
+/*/node_modules
+/angular-webpack/build
